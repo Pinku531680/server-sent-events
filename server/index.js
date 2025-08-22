@@ -1,5 +1,6 @@
 const express = require("express")
 const cors = require("cors")
+require("dotenv").config()
 
 const donation = {
     money: 0,
@@ -39,7 +40,7 @@ app.get("/dashboard", (req, res) => {
         
         // SSE has less overhead than simple HTTP approach because the connection is kept alive
         // and the TCP hadnshake and HTTP headers are not repeated
-        
+
 
         res.writeHead(200, {
             'Cache-Control': 'no-cache',
@@ -63,6 +64,8 @@ app.get("/dashboard", (req, res) => {
 })
 
 
-app.listen(9000, () => {
-    console.log("Server Running!")
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+    console.log(`Server Running on port ${PORT}`);
 })
