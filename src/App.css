@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
+.all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px auto;
+  gap: 15px
+}
+
+.all #heading {
+  font-weight: 700;
+  font-size: 25px;
+  color: rgb(63, 204, 117)
+}
+
+.donations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px
+}
+
+.money, .people {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px
+}
+
+.money p, .people p {
+  font-size: 18px;
+}
+
+.money span, .people span {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(63, 204, 117)
+}
+
+.add-donation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px
+}
+
+.add-donation input {
+  height: 25px;
+  width: 110px;
+  padding: 3px 7px;
+  font-size: 16px;
+  outline: none;
+  border-radius: 4px;
+  border: 2px solid rgb(238, 238, 238);
+  background: rgb(238, 238, 238);
+}
+
+.add-donation button {
+  padding: 3px 7px;
+  height: 32px;
+  outline: none;
+  border: none;
+  background: rgb(63, 204, 117);
+  color: white;
+  font-size: 16px;
+  border-radius: 3px;
+  box-shadow: 0px 1.5px 2px rgba(0,0,0,0.2);
+  transition: 0.2s;
+}
+
+.add-donation button:active {
+  box-shadow: none;
+}
+
